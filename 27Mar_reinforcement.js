@@ -2,6 +2,7 @@
 //function to loop through array and shift out the first element in array, condition check that length of array is less than k
 
 let test =['hi', 'marbles', 'mittens', 'bye', 'lorem', 'ipsum', 'to', 'a', 'hippocampus'];
+let test2 = ["zone", "abigail", "theta", "form", "libe", "zas", "theta", "abigail"];
 let fail = [];
 function concatenateK(arr, k) {
   let conarray = [];
@@ -23,10 +24,10 @@ function longestConsecutive(arr, k) {
         var removed = arr.shift();
       }
     }
-    var longest = compareArray.reduce((a, b) => a.length > b.length ? a : b, '');
+    var longest = compareArray.reduceRight((a, b) => a.length > b.length ? a : b, '');
     console.log(longest);
   }}
 
-longestConsecutive(test,3);
+longestConsecutive(test2,2);
 //expected output
 // marblesmittensbye
