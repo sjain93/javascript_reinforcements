@@ -28,6 +28,6 @@ function longestConsecutive(arr, k) {
     console.log(longest);
   }}
 
-longestConsecutive(test2,2);
+longestConsecutive(test,3);
 //expected output
 // marblesmittensbye
